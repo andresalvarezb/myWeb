@@ -1,0 +1,12 @@
+{
+  "name": "myweb",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "index.js",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andres Alvarez",
+  "license": "ISC"
+}
