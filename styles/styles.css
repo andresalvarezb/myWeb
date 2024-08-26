@@ -8,7 +8,7 @@
     --color-5: #86798c;
     --color-6: #0f1de1;
     --color-7: #d8f901;
-    --color-8:rgb(0, 216, 4);
+    --color-8: rgb(0, 216, 4);
     --color-9: #9f6c3a;
     --color-10: #373737;
 
@@ -39,7 +39,8 @@ img {
 }
 
 /* font size */
-li, a,
+li,
+a,
 p {
     font-size: 1.8rem;
     line-height: 1.8;
@@ -66,7 +67,9 @@ h3 {
     font-weight: 500;
 }
 
-h1:hover, h2:hover, h3:hover {
+h1:hover,
+h2:hover,
+h3:hover {
     color: var(--color-3);
 }
 
@@ -88,8 +91,11 @@ h1:hover, h2:hover, h3:hover {
 }
 
 /* Wrapper */
-.wrapper {
+body {
     height: 100vh;
+}
+.wrapper {
+    height: 100%;
     max-width: 1440px;
     margin: 0 auto;
     position: relative;
@@ -102,6 +108,7 @@ h1:hover, h2:hover, h3:hover {
 }
 
 .wrapper__content {
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -130,6 +137,19 @@ h1:hover, h2:hover, h3:hover {
     color: var(--color-3);
 }
 
+.header__menu-icon, .header__menu_close {
+    display: none;
+    cursor: pointer;
+}
+
+.header__menu-icon:hover, .header__menu_close:hover {
+    color: var(--color-3);
+}
+
+/* .header__menu_close {
+    display: none;
+} */
+
 .header__nav {
     display: flex;
     align-items: center;
@@ -151,6 +171,8 @@ h1:hover, h2:hover, h3:hover {
     justify-content: space-between;
     align-items: center;
     flex: 2;
+    /* max-height: 79.7rem; */
+    overflow-y: scroll;
 }
 
 .main__section-text {
@@ -159,7 +181,6 @@ h1:hover, h2:hover, h3:hover {
     letter-spacing: 2rem;
     writing-mode: vertical-lr;
 }
-
 
 .main__social-media {
     display: flex;
@@ -177,4 +198,62 @@ h1:hover, h2:hover, h3:hover {
 
 .footer {
     color: var(--color-1);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .header {
+        align-items: flex-start;
+    }
+
+    .header__menu-icon {
+        display: block;
+    }
+
+    .header__menu-icon i {
+        font-size: 5rem;
+    }
+
+    .header__nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-end;
+        display: none;
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        background-color: rgb(255, 255, 255);
+        padding: 0 0 2rem 2rem;
+    }
+
+    .header__menu_close {
+        display: block;
+    }
+
+    .header__menu_close i {
+        font-size: 3rem;
+        transform: rotate(45deg);
+    }
+
+    .main__social-media {
+        align-self: flex-end;
+        gap: 1rem;
+        flex-direction: initial;
+        position: absolute;
+        right: 3rem;
+        bottom: 1rem;
+    }
+
+    .main__social-media i {
+        font-size: 2.5rem;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+
+    .hidden-menu {
+        display: none;
+    }
 }

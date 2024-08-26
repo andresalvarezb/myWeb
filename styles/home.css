@@ -53,3 +53,39 @@
 .main__text p:last-child {
     color: var(--color-5);
 }
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+    .main__img {
+        width: 40rem;
+        height: 40rem;
+        transition: all ease 0.5s;
+        margin: 0 auto;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .main__img {
+        width: 30rem;
+        height: 30rem;
+        transition: all ease 0.5s;
+    }
+
+    .main__content {
+        flex: 2;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 450px) {
+    .main__img {
+        width: 20rem;
+        height: 20rem;
+        transition: all ease 0.5s;
+    }
+
+    .main__text p {
+        font-size: 3rem;
+    }
+}

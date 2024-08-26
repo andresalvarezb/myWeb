@@ -1,0 +1,17 @@
+/* .main {
+    justify-content: center;
+    flex: 2;
+} */
+
+.black-block{
+    width: 30%;
+    height: 100%;
+}
+
+.main {
+    gap: 0rem;
+}
+
+.main__content {
+    padding-left: 28%;
+}

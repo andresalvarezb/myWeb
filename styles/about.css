@@ -21,3 +21,23 @@
 .technologies {
     color: var(--color-3);
 }
+
+/* RESPONSIVE */
+@media (max-width: 1040px) {
+    h1 {
+        font-size: 4.375rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    .main__content {
+        overflow-y: scroll;
+        height: 100%;
+        padding-left: 20%;
+    }
+}
+/* @media (max-width: 750px) {
+    .main__content {
+        overflow-y: scroll;
+    }
+} */

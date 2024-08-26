@@ -40,11 +40,17 @@
                     <div class="header__logo">
                         <span>&lt;</span>andres<span class="logo__bar">/</span><span>&gt;</span>
                     </div>
-                    <nav class="header__nav">
+                    <div class="header__menu-icon" id="menu-open">
+                        <i class='bx bx-menu-alt-right'></i>
+                    </div>
+                    <nav class="header__nav" id="menu">
+                        <div class="header__menu_close" id="menu-close">
+                            <i class='bx bx-plus-circle'></i>
+                        </div>
                         <a href="../index.html" class="header__nav--home">Home</a>
                         <a href="./about.html" class="header__nav--about">About</a>
-                        <a href="#" class="header__nav--service current-page">Services</a>
                         <a href="./projects.html" class="header__nav--project">Project</a>
+                        <a href="#" class="header__nav--service current-page">Services</a>
                     </nav>
                 </header>
                 <main class="main">
@@ -78,6 +84,6 @@
                 </footer>
             </div>
         </div>
-
+        <script src="../index.js"></script>
     </body>
 </html>

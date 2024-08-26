@@ -14,7 +14,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="../styles/styles.css" />
-        <link rel="stylesheet" href="../styles/about.css" />
+        <link rel="stylesheet" href="../styles/projects.css" />
 
         <title>Andres Alvarez</title>
     </head>
@@ -40,11 +40,17 @@
                     <div class="header__logo">
                         <span>&lt;</span>andres<span class="logo__bar">/</span><span>&gt;</span>
                     </div>
-                    <nav class="header__nav">
+                    <div class="header__menu-icon" id="menu-open">
+                        <i class='bx bx-menu-alt-right'></i>
+                    </div>
+                    <nav class="header__nav" id="menu">
+                        <div class="header__menu_close" id="menu-close">
+                            <i class='bx bx-plus-circle'></i>
+                        </div>
                         <a href="../index.html" class="header__nav--home">Home</a>
                         <a href="./about.html" class="header__nav--about">About</a>
-                        <a href="./services.html" class="header__nav--service">Services</a>
                         <a href="#" class="header__nav--project current-page">Project</a>
+                        <a href="./services.html" class="header__nav--service">Services</a>
                     </nav>
                 </header>
                 <main class="main">
@@ -68,6 +74,6 @@
                 </footer>
             </div>
         </div>
-
+        <script src="../index.js"></script>
     </body>
 </html>
