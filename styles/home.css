@@ -1,0 +1,55 @@
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main__img {
+    width: 50rem;
+    height: 50rem;
+    aspect-ratio: 1 / 1;
+}
+
+.main__img img {
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.main__text {
+    align-self: center;
+}
+
+.main__text p {
+    font-size: 4rem;
+    color: var(--color-1);
+    line-height: 1;
+}
+
+.main__text p:first-child,
+.main__text p:last-child {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.main__text p:first-child {
+    color: var(--color-1);
+}
+
+.main__text p:nth-child(2) {
+    line-height: 1.5;
+}
+
+.main__text p:nth-child(2) span {
+    color: var(--color-2);
+}
+
+.main__text p:first-child span {
+    color: var(--color-3);
+}
+
+.main__text p:last-child {
+    color: var(--color-5);
+}

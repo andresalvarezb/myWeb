@@ -1,0 +1,38 @@
+/* .wrapper {
+    height:unset;
+} */
+
+.black-block{
+    width: 30%;
+    height: 100%;
+}
+
+.main {
+    gap: 4rem;
+}
+
+.main__content {
+    padding-left: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* .html {
+    color: var(--color-3);
+}
+
+.css {
+    color: var(--color-6);
+}
+
+.javascript {
+    color: var(--color-7);
+}
+.python {
+    color: var(--color-8);
+} */
+
+.tecnologias {
+    color: var(--color-3);
+}
