@@ -3,8 +3,8 @@
 :root {
     --color-1: #fff;
     --color-2: #000;
-    --color-3: #ff7300;
-    --color-4: #d9a41b;
+    --color-4: #ff7300;
+    --color-3: #d9a41b;
     --color-5: #86798c;
     --color-6: #0f1de1;
     --color-7: #d8f901;
@@ -128,10 +128,19 @@ body {
     align-items: center;
 }
 
-.header__logo {
+.header__logo a{
     color: var(--color-1);
     font-size: 4rem;
 }
+
+.header__logo span {
+    color: var(--color-5);
+}
+
+.header__logo span:nth-child(2) {
+    color: var(--color-3);
+}
+
 
 .logo__bar {
     color: var(--color-3);
@@ -193,7 +202,7 @@ body {
 }
 
 .main__social-media i:hover {
-    color: var(--color-4);
+    color: var(--color-3);
 }
 
 .footer {
